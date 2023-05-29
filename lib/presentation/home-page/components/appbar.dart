@@ -14,7 +14,7 @@ class HomePageAppBar extends StatelessWidget {
     return AppBar(
       backgroundColor: appbarColor,
       title: const Text(
-        "Explore",
+        "WARAN",
         style: TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold,
