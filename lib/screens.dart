@@ -10,6 +10,6 @@ export 'package:waran/presentation/home-page/components/popularplace_page.dart';
 export 'package:get/get_core/get_core.dart';
 export 'package:waran/constants.dart';
 export 'package:waran/controllers/tab_controller.dart';
-
+export 'package:waran/presentation/home-page/components/popularplacelist_item.dart';
 export 'package:waran/presentation/home-page/components/categorylist_item.dart';
 export 'package:get/get_instance/get_instance.dart';

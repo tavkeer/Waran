@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
     final double height = MediaQuery.of(context).size.height;
 
     //width of the device
-    final double width = MediaQuery.of(context).size.width;
+    // final double width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size(double.infinity, height * 0.13),
@@ -21,12 +21,12 @@ class HomePage extends StatelessWidget {
       body: GetBuilder<TabGetXController>(
         builder: (controller) => TabBarView(
           controller: tabController.controller,
-          children: [
+          children: const [
             // Content of the 'category' tab
-            const CategoryPage(),
+            CategoryPage(),
 
             // Content of the 'popular-places' tab
-            PopularPlacesPage(height: height, width: width),
+            PopularPlacesPage(),
           ],
         ),
       ),
