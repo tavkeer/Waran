@@ -2,8 +2,8 @@ import 'screens.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
-      systemNavigationBarColor: Colors.white,
+    SystemUiOverlayStyle(
+      systemNavigationBarColor: Colors.grey[200],
       systemNavigationBarDividerColor: Colors.transparent,
     ),
   );
@@ -16,10 +16,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: "Tourist or Hikers Guide App",
+      title: "Waran",
       theme: ThemeData(
         useMaterial3: true,
         fontFamily: GoogleFonts.ubuntu().fontFamily,
+        scaffoldBackgroundColor: Colors.grey[200],
       ),
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
