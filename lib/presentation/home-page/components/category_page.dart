@@ -1,4 +1,3 @@
-import 'package:waran/models/categroy_model.dart';
 import 'package:waran/screens.dart';
 
 class CategoryPage extends StatelessWidget {

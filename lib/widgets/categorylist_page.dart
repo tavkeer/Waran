@@ -1,8 +1,10 @@
 import 'package:waran/screens.dart';
 
 class CategoryListPage extends StatelessWidget {
+  final List data;
   const CategoryListPage({
     Key? key,
+    required this.data,
   }) : super(key: key);
 
   @override

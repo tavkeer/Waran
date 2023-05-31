@@ -1,16 +1,16 @@
 import 'package:waran/screens.dart';
 
 class MounainPeaksPage extends StatelessWidget {
-  const MounainPeaksPage({super.key});
+  final int index;
+  const MounainPeaksPage({
+    Key? key,
+    required this.index,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text(
-          "MountainPeaksPage",
-        ),
-      ),
+    return CategoryListPage(
+      data: CategroyDataModel.data[index].modelData,
     );
   }
 }
