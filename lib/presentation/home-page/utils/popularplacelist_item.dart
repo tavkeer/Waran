@@ -3,14 +3,10 @@ import 'package:waran/screens.dart';
 class PopularPlaceListItem extends StatelessWidget {
   const PopularPlaceListItem({
     Key? key,
-    required this.imagePath,
-    required this.text,
-    required this.desc,
+    required this.data,
   }) : super(key: key);
 
-  final String imagePath;
-  final String text;
-  final String desc;
+  final dynamic data;
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +19,7 @@ class PopularPlaceListItem extends StatelessWidget {
     return Container(
       width: width,
       height: height * 0.2,
+      margin: const EdgeInsets.only(top: 15),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
@@ -41,13 +38,13 @@ class PopularPlaceListItem extends StatelessWidget {
                   height: width * 0.23,
                   width: width * 0.23,
                   child: Image.network(
-                    imagePath,
+                    data.imagePath,
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
               title: Text(
-                text,
+                data.text,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
@@ -60,7 +57,7 @@ class PopularPlaceListItem extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                desc,
+                data.desc,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: GoogleFonts.urbanist().fontFamily,
