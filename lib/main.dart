@@ -1,3 +1,5 @@
+import 'package:waran/widgets/categorylist_page.dart';
+
 import 'screens.dart';
 
 void main() {
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.grey[200],
       ),
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: const CategoryListPage(),
     );
   }
 }
