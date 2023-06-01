@@ -14,7 +14,7 @@ export 'package:waran/presentation/home-page/utils/popularplacelist_item.dart';
 export 'package:waran/presentation/home-page/utils/categorylist_item.dart';
 export 'package:waran/models/popularplace_model.dart';
 export 'package:get/get_instance/get_instance.dart';
-export 'package:waran/models/hikinglist_model.dart';
+export 'package:waran/models/demodata_model.dart';
 export 'package:waran/widgets/categorylist_page.dart';
 export 'package:waran/widgets/categorylist_pageitem.dart';
 export 'package:get/get_navigation/get_navigation.dart';

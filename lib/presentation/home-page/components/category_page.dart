@@ -22,6 +22,7 @@ class CategoryPage extends StatelessWidget {
         itemCount: data.length,
         itemBuilder: (context, index) {
           return CategoryListItem(
+            // index: index,
             data: data[index],
           );
         },

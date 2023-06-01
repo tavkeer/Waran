@@ -25,7 +25,7 @@ class CategoryListPageItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
       ),
       child: InkWell(
-        onTap: () {},
+        onTap: () => Get.to(() => DetailsPage(data: data)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,

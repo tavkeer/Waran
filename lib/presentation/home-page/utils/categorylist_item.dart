@@ -3,9 +3,10 @@ import 'package:waran/screens.dart';
 class CategoryListItem extends StatelessWidget {
   const CategoryListItem({
     Key? key,
+    // required this.index,
     required this.data,
   }) : super(key: key);
-
+  // final int index;
   final dynamic data;
 
   @override
@@ -25,7 +26,7 @@ class CategoryListItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
       ),
       child: InkWell(
-        onTap: data.ontap,
+        onTap: () => Get.to(() => const DiscoverPage()),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,

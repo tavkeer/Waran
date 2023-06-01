@@ -26,7 +26,7 @@ class CategoryListPage extends StatelessWidget {
 
     //
     //remember to get the data or model from previous class
-    final List<HikingDataModel> data = HikingDataModel.data;
+    final List<DemoDataModel> data = DemoDataModel.data;
     debugPrint("height: $height\nwidth:$width");
 
     return SafeArea(
