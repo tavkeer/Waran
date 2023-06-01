@@ -9,8 +9,14 @@ class MountaineeringPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CategoryListPage(
-      data: CategroyDataModel.data[index].modelData,
+    return Scaffold(
+      appBar: const PreferredSize(
+        preferredSize: Size(double.infinity, 57),
+        child: CommonAppBar(),
+      ),
+      body: CategoryListPage(
+        data: CategroyDataModel.data[index].modelData,
+      ),
     );
   }
 }

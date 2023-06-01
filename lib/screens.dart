@@ -24,3 +24,6 @@ export 'package:waran/presentation/hiking_page/hiking_page.dart';
 export 'package:waran/presentation/mountaineering_page/mountaineering_page.dart';
 export 'package:waran/presentation/mountainpeaks_page/mountainpeaks_page.dart';
 export 'package:waran/models/categroy_model.dart';
+export 'package:waran/presentation/details_page/details_page.dart';
+export 'package:waran/presentation/profile-page/profile_page.dart';
+export 'package:waran/widgets/common_appbar.dart';

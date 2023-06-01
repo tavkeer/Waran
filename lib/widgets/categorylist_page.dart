@@ -29,18 +29,16 @@ class CategoryListPage extends StatelessWidget {
     final List<HikingDataModel> data = HikingDataModel.data;
     debugPrint("height: $height\nwidth:$width");
 
-    return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: ListView.builder(
-            itemCount: data.length,
-            itemBuilder: (context, index) {
-              return CategoryListPageItem(
-                data: data[index],
-              );
-            },
-          ),
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: ListView.builder(
+          itemCount: data.length,
+          itemBuilder: (context, index) {
+            return CategoryListPageItem(
+              data: data[index],
+            );
+          },
         ),
       ),
     );

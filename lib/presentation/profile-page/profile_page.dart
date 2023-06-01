@@ -6,11 +6,14 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text(
-          "ProfilePage",
+        appBar: PreferredSize(
+          preferredSize: Size(double.infinity, 57),
+          child: CommonAppBar(
+            title: "Profile",
+          ),
         ),
-      ),
-    );
+        body: Center(
+          child: Text("ProfilePage"),
+        ));
   }
 }

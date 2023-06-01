@@ -29,7 +29,9 @@ class HomePageAppBar extends StatelessWidget {
           ),
         ),
         IconButton(
-          onPressed: () {},
+          onPressed: () => Get.to(
+            () => const ProfilePage(),
+          ),
           icon: const Icon(
             Icons.person,
             color: Colors.white,

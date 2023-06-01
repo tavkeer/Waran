@@ -14,8 +14,14 @@ class AlpineLakesPage extends StatelessWidget {
 
     //till now it is only local data base
 
-    return CategoryListPage(
-      data: dataList,
+    return Scaffold(
+      appBar: const PreferredSize(
+        preferredSize: Size(double.infinity, 57),
+        child: CommonAppBar(),
+      ),
+      body: CategoryListPage(
+        data: dataList,
+      ),
     );
   }
 }

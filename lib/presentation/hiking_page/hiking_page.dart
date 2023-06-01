@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:waran/screens.dart';
 
 class HikingPage extends StatelessWidget {
@@ -10,8 +9,14 @@ class HikingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CategoryListPage(
-      data: CategroyDataModel.data[index].modelData,
+    return Scaffold(
+      appBar: const PreferredSize(
+        preferredSize: Size(double.infinity, 57),
+        child: CommonAppBar(),
+      ),
+      body: CategoryListPage(
+        data: CategroyDataModel.data[index].modelData,
+      ),
     );
   }
 }
