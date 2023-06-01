@@ -1,8 +1,8 @@
 import 'package:waran/screens.dart';
 
-class MounainPeaksPage extends StatelessWidget {
+class DiscoverPage extends StatelessWidget {
   final int index;
-  const MounainPeaksPage({
+  const DiscoverPage({
     Key? key,
     required this.index,
   }) : super(key: key);
