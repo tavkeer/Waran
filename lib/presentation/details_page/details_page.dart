@@ -17,9 +17,9 @@ class DetailsPage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: Text(
-          data.text,
-          style: const TextStyle(fontWeight: FontWeight.bold),
+        child: Image.network(
+          data.imgLink,
+          fit: BoxFit.cover,
         ),
       ),
     );
