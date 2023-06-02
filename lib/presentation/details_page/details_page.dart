@@ -9,54 +9,37 @@ class DetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double usableHeight = Get.height - 60;
-
     return Scaffold(
-      appBar: const PreferredSize(
-        preferredSize: Size(double.infinity, 57),
-        child: CommonAppBar(title: "Explore"),
-      ),
       body: SizedBox(
         height: Get.height,
         width: Get.width,
         child: Stack(
           children: [
+            //leading image of details page
+            Positioned(top: 0, child: DetailsPageImage(data: data)),
+
+            //main data or description of details page
+            const Positioned(bottom: 0, child: DetailsPageData()),
+
+            //app bar icons of the details page ///back screen icon
+            CustomIconbutton(icon: Icons.arrow_back, ontap: () => Get.back()),
+
+            //app bar icons of the details page ///profile screen icon
             Positioned(
-              top: 0,
-              child: SizedBox(
-                height: usableHeight * 0.38,
-                width: Get.width,
-                child: Image.network(
-                  data.imgLink,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            Positioned(
-              bottom: 0,
-              child: Container(
-                height: usableHeight * 0.639,
-                width: Get.width,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(30),
-                    topRight: Radius.circular(30),
-                  ),
-                ),
-                child: const Center(
-                  child: Text(
-                    "DemoData",
-                    style: TextStyle(
-                      fontSize: 40,
-                    ),
-                  ),
+              right: 0,
+              child: CustomIconbutton(
+                icon: Icons.person,
+                ontap: () => Get.to(
+                  () => const ProfilePage(),
                 ),
               ),
             ),
           ],
         ),
       ),
+
+      //custom floating action button for downloading maps example gpx file
+      floatingActionButton: const MapDownloadButtton(),
     );
   }
 }

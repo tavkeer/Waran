@@ -24,3 +24,7 @@ export 'package:waran/models/categroy_model.dart';
 export 'package:waran/presentation/details_page/details_page.dart';
 export 'package:waran/presentation/profile-page/profile_page.dart';
 export 'package:waran/widgets/common_appbar.dart';
+export 'package:waran/presentation/details_page/utils/custom_iconbutton.dart';
+export 'package:waran/presentation/details_page/components/detailspage_data.dart';
+export 'package:waran/presentation/details_page/components/detailspage_image.dart';
+export 'package:waran/presentation/details_page/utils/floatingaction_button.dart';
