@@ -16,14 +16,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: "Waran",
-      theme: ThemeData(
-        useMaterial3: true,
-        fontFamily: GoogleFonts.ubuntu().fontFamily,
-        scaffoldBackgroundColor: Colors.grey[200],
-      ),
-      debugShowCheckedModeBanner: false,
-      home: const HomePage(),
-    );
+        title: "Waran",
+        theme: ThemeData(
+          useMaterial3: true,
+          fontFamily: GoogleFonts.ubuntu().fontFamily,
+          scaffoldBackgroundColor: Colors.grey[200],
+        ),
+        debugShowCheckedModeBanner: false,
+        home: const HomePage());
   }
 }

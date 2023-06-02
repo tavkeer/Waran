@@ -21,7 +21,7 @@ class DemoDataModel {
   static List<DemoDataModel> data = [
     DemoDataModel(
       imgLink:
-          "https://images.unsplash.com/photo-1666501549805-32a6c312e492?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80",
+          "https://images.unsplash.com/photo-1666501549210-2ae4acb3be18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80",
       shortdesc:
           "Sindh and Lidder valleys are two most beautiful side valleys of Kashmir and got their names from the rivers flowing through these valleys( Sindh & Lidder river)",
       text: "Kangan To Aru- Sindh to Lidder valley",
@@ -33,7 +33,7 @@ class DemoDataModel {
     ),
     DemoDataModel(
       imgLink:
-          "https://images.unsplash.com/photo-1666501549805-32a6c312e492?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80",
+          "https://images.unsplash.com/photo-1666501549210-2ae4acb3be18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80",
       shortdesc:
           "A short distance from the Manzgam (6 Km Approx.). Interspersed with luxuriant forest trees with towering mountains in sight.",
       text: "Hirpora to Rainuer meadow",
@@ -45,7 +45,7 @@ class DemoDataModel {
     ),
     DemoDataModel(
       imgLink:
-          "https://images.unsplash.com/photo-1666501549805-32a6c312e492?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80",
+          "https://images.unsplash.com/photo-1666501549210-2ae4acb3be18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80",
       shortdesc:
           "Sindh and Lidder valleys are two most beautiful side valleys of Kashmir and got their names from the rivers flowing through these valleys( Sindh & Lidder river)",
       text: "Kangan To Aru- Sindh to Lidder valley",
