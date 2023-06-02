@@ -28,7 +28,7 @@ class DetailsPage extends StatelessWidget {
             Positioned(
               right: 0,
               child: CustomIconbutton(
-                icon: Icons.person,
+                icon: Icons.person_outline,
                 ontap: () => Get.to(
                   () => const ProfilePage(),
                 ),

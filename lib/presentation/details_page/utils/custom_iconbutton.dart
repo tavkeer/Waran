@@ -22,7 +22,7 @@ class CustomIconbutton extends StatelessWidget {
             padding: const EdgeInsets.all(5),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: scaffoldColor,
+              color: Colors.black26,
               border: Border.all(
                 width: 0.5,
                 color: Colors.grey.shade400,
@@ -30,7 +30,7 @@ class CustomIconbutton extends StatelessWidget {
             ),
             child: Icon(
               icon,
-              color: Colors.black,
+              color: Colors.white,
             ),
           ),
         ),
