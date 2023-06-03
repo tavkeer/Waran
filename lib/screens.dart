@@ -28,4 +28,7 @@ export 'package:waran/presentation/details_page/utils/custom_iconbutton.dart';
 export 'package:waran/presentation/details_page/components/detailspage_data.dart';
 export 'package:waran/presentation/details_page/components/detailspage_image.dart';
 export 'package:waran/presentation/details_page/utils/floatingaction_button.dart';
+export 'package:waran/presentation/landing_page/components/landingpage_image.dart';
+export 'package:waran/presentation/landing_page/components/animated_googlebutton.dart';
+export 'package:waran/presentation/landing_page/landing_page.dart';
 export 'package:waran/presentation/details_page/utils/userful_details.dart';
