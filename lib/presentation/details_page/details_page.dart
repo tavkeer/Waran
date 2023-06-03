@@ -19,7 +19,7 @@ class DetailsPage extends StatelessWidget {
             Positioned(top: 0, child: DetailsPageImage(data: data)),
 
             //main data or description of details page
-            const Positioned(bottom: 0, child: DetailsPageData()),
+            Positioned(bottom: 0, child: DetailsPageData(data: data)),
 
             //app bar icons of the details page ///back screen icon
             CustomIconbutton(icon: Icons.arrow_back, ontap: () => Get.back()),

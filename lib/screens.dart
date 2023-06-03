@@ -28,3 +28,4 @@ export 'package:waran/presentation/details_page/utils/custom_iconbutton.dart';
 export 'package:waran/presentation/details_page/components/detailspage_data.dart';
 export 'package:waran/presentation/details_page/components/detailspage_image.dart';
 export 'package:waran/presentation/details_page/utils/floatingaction_button.dart';
+export 'package:waran/presentation/details_page/utils/userful_details.dart';
