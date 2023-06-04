@@ -30,28 +30,37 @@ class PopularPlaceListItem extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            ListTile(
-              contentPadding: const EdgeInsets.all(10),
-              leading: ClipRRect(
-                borderRadius: BorderRadius.circular(15),
-                child: SizedBox(
-                  height: width * 0.23,
-                  width: width * 0.23,
-                  child: Image.network(
-                    data.imagePath,
-                    fit: BoxFit.cover,
-                  ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
+                child: Row(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(15),
+                      child: SizedBox(
+                        height: width * 0.33,
+                        width: width * 0.3,
+                        child: Image.network(
+                          data.imagePath,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Text(
+                      data.text,
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const Spacer(),
+                    const Padding(
+                      padding: EdgeInsets.only(right: 10),
+                      child: Icon(Icons.keyboard_arrow_right_sharp),
+                    ),
+                  ],
                 ),
-              ),
-              title: Text(
-                data.text,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              trailing: const Padding(
-                padding: EdgeInsets.only(right: 10),
-                child: Icon(Icons.keyboard_arrow_right_sharp),
               ),
             ),
             Padding(
