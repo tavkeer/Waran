@@ -23,6 +23,6 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.grey[200],
         ),
         debugShowCheckedModeBanner: false,
-        home: const HomePage());
+        home: const LandingPage());
   }
 }

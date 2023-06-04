@@ -1,14 +1,14 @@
 import 'package:waran/screens.dart';
 
-class InsideButton extends StatefulWidget {
-  const InsideButton({super.key});
+class GoogleSignIn extends StatefulWidget {
+  const GoogleSignIn({super.key});
 
   @override
   // ignore: library_private_types_in_public_api
-  _InsideButtonState createState() => _InsideButtonState();
+  _GoogleSignInState createState() => _GoogleSignInState();
 }
 
-class _InsideButtonState extends State<InsideButton>
+class _GoogleSignInState extends State<GoogleSignIn>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   late Animation<double> _scaleAnimation;
@@ -19,7 +19,7 @@ class _InsideButtonState extends State<InsideButton>
 
     _animationController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 150),
     );
 
     _scaleAnimation = Tween<double>(begin: 1.0, end: 0.9).animate(
@@ -38,7 +38,11 @@ class _InsideButtonState extends State<InsideButton>
 
   void _onButtonPressed() {
     _animationController.forward().then((_) {
-      _animationController.reverse();
+      _animationController.reverse().whenComplete(
+            () => Get.off(
+              () => const HomePage(),
+            ),
+          );
       // Perform actions on button press here
     });
   }
@@ -66,20 +70,38 @@ class _InsideButtonState extends State<InsideButton>
         },
         child: Container(
           width: Get.width,
-          height: 60,
+          height: 50,
           decoration: BoxDecoration(
             color: Colors.blue,
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(10),
           ),
-          child: const Center(
-            child: Text(
-              'Go Inside',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                margin: const EdgeInsets.all(5),
+                padding: const EdgeInsets.all(10),
+                width: 40,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.white.withOpacity(0.9),
+                ),
+                child: Image.asset(
+                  'assets/google.png',
+                ),
               ),
-            ),
+              Text(
+                'Continue with Google',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  letterSpacing: 1.2,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: GoogleFonts.urbanist().fontFamily,
+                ),
+              ),
+              const SizedBox(width: 50),
+            ],
           ),
         ),
       ),
